@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join PUCC - Premier University Computer Club</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand"><img src="assets/logos/pucc-logo.png" alt="PUCC Logo" class="nav-logo"></a>
+      <button class="nav-mobile-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="wings.html">Wings</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="join.html" class="active btn btn-primary btn-sm">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="join-hero">
+    <div class="container">
+      <div class="hero-content-alt">
+        <h1>Join PUCC Today</h1>
+        <p>Be part of a thriving community of innovators and tech enthusiasts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Steps -->
+  <section class="join-steps">
+    <div class="container">
+      <div class="section-header">
+        <h2>2-Step Joining Process</h2>
+        <p>Simple, quick, and hassle-free</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-in-up">
+          <div class="step-number">1</div>
+          <h3>Fill the Form</h3>
+          <p>Complete our membership interest form with your basic information and select your preferred wing(s)</p>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step-card fade-in-up">
+          <div class="step-number">2</div>
+          <h3>Pay Membership Fee</h3>
+          <p>Choose your membership type and complete the payment. Instant access to all benefits!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Form -->
+  <section class="join-form-section">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Membership Interest Form</h2>
+          <p>Tell us about yourself and your interests</p>
+        </div>
+        <form class="membership-form" id="joinForm">
+          <!-- Personal Information -->
+          <fieldset class="form-fieldset">
+            <legend>Personal Information</legend>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                  <option value="">Select your department</option>
+                  <option value="cse">Computer Science & Engineering</option>
+                  <option value="it">Information Technology</option>
+                  <option value="ece">Electronics & Communication</option>
+                  <option value="mechanical">Mechanical Engineering</option>
+                  <option value="civil">Civil Engineering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="year">Year of Study *</label>
+                <select id="year" name="year" required>
+                  <option value="">Select your year</option>
+                  <option value="1">1st Year</option>
+                  <option value="2">2nd Year</option>
+                  <option value="3">3rd Year</option>
+                  <option value="4">4th Year</option>
+                  <option value="graduate">Graduate/Other</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Wing Selection -->
+          <fieldset class="form-fieldset">
+            <legend>Select Your Interests (Choose at least one)</legend>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="cp" name="wings" value="cp">
+                <label for="cp">⚡ Competitive Programming</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="se" name="wings" value="se">
+                <label for="se">🛠️ Software Engineering</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="ln" name="wings" value="ln">
+                <label for="ln">🌐 Linux & Networking</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="dnr" name="wings" value="dnr">
+                <label for="dnr">🧠 Deep Neural Research</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="rd" name="wings" value="rd">
+                <label for="rd">🔬 Research & Development</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cg" name="wings" value="cg">
+                <label for="cg">🚀 Career Guidance</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Membership Type -->
+          <fieldset class="form-fieldset">
+            <legend>Select Membership Type *</legend>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="student" name="membership" value="student" required>
+                <label for="student">
+                  <span class="radio-title">Student Membership</span>
+                  <span class="radio-price">350 BDT</span>
+                </label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="professional" name="membership" value="professional">
+                <label for="professional">
+                  <span class="radio-title">Professional Membership</span>
+                  <span class="radio-price">450 BDT</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Terms -->
+          <div class="form-group checkbox-single">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions *</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Proceed to Payment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Plans -->
+  <section class="membership-plans section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Membership Plans</h2>
+        <p>Choose the membership that suits you best</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card fade-in-up">
+          <div class="plan-header">
+            <h3>Student Membership</h3>
+            <div class="plan-price">₹350</div>
+          </div>
+          <div class="plan-features">
+            <p class="plan-description">Perfect for current students</p>
+            <ul>
+              <li>✓ Access to all 6 wings</li>
+              <li>✓ Attend all events & workshops</li>
+              <li>✓ Participate in competitions</li>
+              <li>✓ Mentorship program access</li>
+              <li>✓ Networking opportunities</li>
+              <li>✓ Member badge & certificate</li>
+            </ul>
+            <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">Select Plan</button>
+          </div>
+        </div>
+
+        <div class="plan-card featured fade-in-up">
+          <div class="plan-badge">POPULAR</div>
+          <div class="plan-header">
+            <h3>Professional Membership</h3>
+            <div class="plan-price">₹450</div>
+          </div>
+          <div class="plan-features">
+            <p class="plan-description">For professionals & alumni</p>
+            <ul>
+              <li>✓ All Student benefits, plus:</li>
+              <li>✓ Exclusive alumni network access</li>
+              <li>✓ Mentoring opportunities</li>
+              <li>✓ Corporate partnership events</li>
+              <li>✓ Featured in newsletter</li>
+              <li>✓ Professional certificate</li>
+            </ul>
+            <button class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">Select Plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <p>Have questions? We'd love to help!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card fade-in-up">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>hello@pucc.edu</p>
+          <a href="mailto:hello@pucc.edu" class="contact-link">Send Email</a>
+        </div>
+        <div class="contact-card fade-in-up">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91-xxxxx xxxxx</p>
+          <a href="tel:+91" class="contact-link">Call Now</a>
+        </div>
+        <div class="contact-card fade-in-up">
+          <div class="contact-icon">📍</div>
+          <h3>Office</h3>
+          <p>Premier University, Computer Block</p>
+          <a href="#" class="contact-link">Get Directions</a>
+        </div>
+        <div class="contact-card fade-in-up">
+          <div class="contact-icon">🕐</div>
+          <h3>Office Hours</h3>
+          <p>Mon-Fri: 2 PM - 6 PM</p>
+          <a href="#" class="contact-link">Schedule Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links -->
+  <section class="social-section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Follow Us</h2>
+        <p>Stay connected with PUCC on social media</p>
+      </div>
+      <div class="social-grid">
+        <a href="#" class="social-card fade-in-up">
+          <div class="social-icon">f</div>
+          <p>Facebook</p>
+        </a>
+        <a href="#" class="social-card fade-in-up">
+          <div class="social-icon">𝕏</div>
+          <p>Twitter</p>
+        </a>
+        <a href="#" class="social-card fade-in-up">
+          <div class="social-icon">in</div>
+          <p>LinkedIn</p>
+        </a>
+        <a href="#" class="social-card fade-in-up">
+          <div class="social-icon">📷</div>
+          <p>Instagram</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>PUCC</h4>
+          <p>Premier University Computer Club - Empowering the next generation of tech leaders.</p>
+        </div>
+        <div class="footer-section">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="wings.html">Wings</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Connect</h5>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Premier University Computer Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/join.js"></script>
+</body>
+</html>

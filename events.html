@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - PUCC</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand"><img src="assets/logos/pucc-logo.png" alt="PUCC Logo" class="nav-logo"></a>
+      <button class="nav-mobile-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="wings.html">Wings</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="join.html" class="btn btn-primary btn-sm">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="events-hero">
+    <div class="container">
+      <div class="hero-content-alt">
+        <h1>Events & Activities</h1>
+        <p>Learn, compete, and grow with PUCC</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="events-filter">
+    <div class="container">
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="competition">Competitions</button>
+        <button class="filter-btn" data-filter="workshop">Workshops</button>
+        <button class="filter-btn" data-filter="bootcamp">Bootcamps</button>
+        <button class="filter-btn" data-filter="seminar">Seminars</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section class="events-section">
+    <div class="container">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="events-grid" id="upcomingEvents">
+        <!-- Competition -->
+        <div class="event-card-large fade-in-up" data-category="competition">
+          <img src="assets/wings/competitive-programming/FB_IMG_1782841516609.jpg" alt="Regional Coding Championship" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status upcoming">Upcoming</div>
+            <div class="event-type-badge competition">Competition</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large">
+              <div class="date-num">15</div>
+              <div class="date-text">July</div>
+            </div>
+            <div class="event-info">
+              <h3>Regional Coding Championship</h3>
+              <p>Compete against teams from universities across the region in this prestigious programming competition. All levels welcome!</p>
+              <div class="event-meta">
+                <span class="meta-item">📍 Main Auditorium</span>
+                <span class="meta-item">⏰ 9:00 AM - 5:00 PM</span>
+              </div>
+              <div class="event-tags">
+                <span class="tag">Algorithm</span>
+                <span class="tag">Competitive</span>
+                <span class="tag">Regional</span>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Register Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workshop -->
+        <div class="event-card-large fade-in-up" data-category="workshop">
+          <img src="assets/wings/software-engineering/FB_IMG_1782841443192.jpg" alt="Web Development Bootcamp" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status upcoming">Upcoming</div>
+            <div class="event-type-badge workshop">Workshop</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large">
+              <div class="date-num">22</div>
+              <div class="date-text">July</div>
+            </div>
+            <div class="event-info">
+              <h3>Web Development Bootcamp</h3>
+              <p>Master modern web development technologies including React, Node.js, and MongoDB. Hands-on training with live projects.</p>
+              <div class="event-meta">
+                <span class="meta-item">📍 Computer Lab 201</span>
+                <span class="meta-item">⏰ 2:00 PM - 6:00 PM</span>
+              </div>
+              <div class="event-tags">
+                <span class="tag">Frontend</span>
+                <span class="tag">Backend</span>
+                <span class="tag">Practical</span>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Register Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seminar -->
+        <div class="event-card-large fade-in-up" data-category="seminar">
+          <img src="assets/wings/deep-neural-research/FB_IMG_1782841032221.jpg" alt="AI/ML Industry Talk" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status upcoming">Upcoming</div>
+            <div class="event-type-badge seminar">Seminar</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large">
+              <div class="date-num">28</div>
+              <div class="date-text">July</div>
+            </div>
+            <div class="event-info">
+              <h3>AI/ML Industry Talk</h3>
+              <p>Insights from leading AI researchers on recent breakthroughs in machine learning, neural networks, and practical applications.</p>
+              <div class="event-meta">
+                <span class="meta-item">📍 Auditorium Hall</span>
+                <span class="meta-item">⏰ 4:00 PM - 6:00 PM</span>
+              </div>
+              <div class="event-tags">
+                <span class="tag">AI/ML</span>
+                <span class="tag">Industry</span>
+                <span class="tag">Expert Talk</span>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Register Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootcamp -->
+        <div class="event-card-large fade-in-up" data-category="bootcamp">
+          <img src="assets/wings/competitive-programming/FB_IMG_1782841519147.jpg" alt="Advanced DSA & Competitive Programming Bootcamp" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status upcoming">Upcoming</div>
+            <div class="event-type-badge bootcamp">Bootcamp</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large">
+              <div class="date-num">August</div>
+              <div class="date-text">5-15</div>
+            </div>
+            <div class="event-info">
+              <h3>Advanced DSA & Competitive Programming Bootcamp</h3>
+              <p>Intensive 2-week bootcamp covering advanced data structures, algorithms, and competitive programming strategies.</p>
+              <div class="event-meta">
+                <span class="meta-item">📍 Online & On-campus</span>
+                <span class="meta-item">⏰ 3:00 PM - 7:00 PM (Daily)</span>
+              </div>
+              <div class="event-tags">
+                <span class="tag">DSA</span>
+                <span class="tag">Intensive</span>
+                <span class="tag">2-Week</span>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Events -->
+  <section class="events-section section-alt">
+    <div class="container">
+      <h2 class="section-title">Past Events</h2>
+      <div class="events-grid" id="pastEvents">
+        <!-- Past Event 1 -->
+        <div class="event-card-large fade-in-up" data-category="competition">
+          <img src="assets/wings/competitive-programming/FB_IMG_1782841522430.jpg" alt="PUCC Monthly Code Sprint #45" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status past">Past</div>
+            <div class="event-type-badge competition">Competition</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large past-date">
+              <div class="date-num">12</div>
+              <div class="date-text">June</div>
+            </div>
+            <div class="event-info">
+              <h3>PUCC Monthly Code Sprint #45</h3>
+              <p>Successfully organized with 120+ participants competing across 3 difficulty levels. Amazing performances from all wings!</p>
+              <div class="event-meta">
+                <span class="meta-item">👥 120+ Participants</span>
+                <span class="meta-item">🏆 4 Categories</span>
+              </div>
+              <div class="achievement-badges">
+                <span class="badge">Completed</span>
+                <span class="badge">Record Participation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 2 -->
+        <div class="event-card-large fade-in-up" data-category="workshop">
+          <img src="assets/wings/cybersecurity/FB_IMG_1782841357584.jpg" alt="Docker & Kubernetes Workshop" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status past">Past</div>
+            <div class="event-type-badge workshop">Workshop</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large past-date">
+              <div class="date-num">05</div>
+              <div class="date-text">June</div>
+            </div>
+            <div class="event-info">
+              <h3>Docker & Kubernetes Workshop</h3>
+              <p>Hands-on workshop covering containerization and orchestration. 85 participants gained practical DevOps experience.</p>
+              <div class="event-meta">
+                <span class="meta-item">👥 85 Participants</span>
+                <span class="meta-item">⭐ 4.8/5 Rating</span>
+              </div>
+              <div class="achievement-badges">
+                <span class="badge">Successfully Completed</span>
+                <span class="badge">High Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 3 -->
+        <div class="event-card-large fade-in-up" data-category="seminar">
+          <img src="assets/wings/software-engineering/FB_IMG_1782841445010.jpg" alt="Startup Ecosystem & Entrepreneurship Talk" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status past">Past</div>
+            <div class="event-type-badge seminar">Seminar</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large past-date">
+              <div class="date-num">28</div>
+              <div class="date-text">May</div>
+            </div>
+            <div class="event-info">
+              <h3>Startup Ecosystem & Entrepreneurship Talk</h3>
+              <p>Industry veterans shared insights on starting tech companies. Inspired 50+ students to explore entrepreneurial ventures.</p>
+              <div class="event-meta">
+                <span class="meta-item">👥 150+ Attendees</span>
+                <span class="meta-item">🚀 50+ Startup Ideas</span>
+              </div>
+              <div class="achievement-badges">
+                <span class="badge">Highly Impactful</span>
+                <span class="badge">Great Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 4 -->
+        <div class="event-card-large fade-in-up" data-category="bootcamp">
+          <img src="assets/wings/software-engineering/FB_IMG_1782841448293.jpg" alt="Frontend Development Bootcamp" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status past">Past</div>
+            <div class="event-type-badge bootcamp">Bootcamp</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large past-date">
+              <div class="date-num">May</div>
+              <div class="date-text">15-25</div>
+            </div>
+            <div class="event-info">
+              <h3>Frontend Development Bootcamp</h3>
+              <p>10-day intensive covering React, Vue.js, and modern CSS. 200+ students completed certification with 95% satisfaction.</p>
+              <div class="event-meta">
+                <span class="meta-item">👥 200+ Participants</span>
+                <span class="meta-item">✅ 190 Certified</span>
+              </div>
+              <div class="achievement-badges">
+                <span class="badge">Completed Successfully</span>
+                <span class="badge">95% Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 5 -->
+        <div class="event-card-large fade-in-up" data-category="competition">
+          <img src="assets/wings/deep-neural-research/FB_IMG_1782841030081.jpg" alt="National Hackathon 2024" class="event-card-image">
+          <div class="event-header">
+            <div class="event-status past">Past</div>
+            <div class="event-type-badge competition">Competition</div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-large past-date">
+              <div class="date-num">10</div>
+              <div class="date-text">April</div>
+            </div>
+            <div class="event-info">
+              <h3>National Hackathon 2024</h3>
+              <p>PUCC team won 1st place in innovation category! 24-hour hackathon with participants from 20+ universities.</p>
+              <div class="event-meta">
+                <span class="meta-item">🏆 1st Place</span>
+                <span class="meta-item">🎓 20+ Universities</span>
+              </div>
+              <div class="achievement-badges">
+                <span class="badge">Championship Victory</span>
+                <span class="badge">Innovation Award</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="events-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Don't Miss Out!</h2>
+        <p>Stay updated with our latest events and join our community of tech enthusiasts</p>
+        <a href="join.html" class="btn btn-primary btn-lg">Join PUCC</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>PUCC</h4>
+          <p>Premier University Computer Club - Empowering the next generation of tech leaders.</p>
+        </div>
+        <div class="footer-section">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="wings.html">Wings</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Connect</h5>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Premier University Computer Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
